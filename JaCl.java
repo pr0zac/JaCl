@@ -83,7 +83,7 @@ class JaCl {
 
   private native void printTest(long ptr, String pk);
 
-  private static void runTests() {
+  private static int runTests() {
     JaCl sender = new JaCl();
     JaCl receiver = new JaCl();
     
@@ -111,7 +111,7 @@ class JaCl {
     }
     else {
       System.out.println("Public encryption test failed!");
-      System.exit(1);
+      return 1;
     }
 
     System.out.println("\nTesting Secret Encryption");
@@ -130,12 +130,14 @@ class JaCl {
     }
     else {
       System.out.println("Secret encryption test failed!");
-      System.exit(1);
+      return 1;
     }
+
+    return 0;
   }
 
   public static void main(String[] args) {
-    runTests();
+    System.exit(runTests());
   }
 }
 
