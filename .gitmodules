@@ -1,0 +1,3 @@
+[submodule "NaCl"]
+	path = NaCl
+	url = git@github.com:CaffeinatedMind/NaCl.git

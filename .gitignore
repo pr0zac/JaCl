@@ -1,0 +1,7 @@
+*.swp
+*.un~
+*.o
+*.pb.h
+JaCl.class
+JaCl.h
+libjacl.jnilib

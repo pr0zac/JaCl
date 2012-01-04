@@ -4,6 +4,5 @@ class JaCl {
      new JaCl().print();
   }
   static {
-     System.loadLibrary("JaCl");
-  }
+     System.loadLibrary("JaCl"); }
 }
